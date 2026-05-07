@@ -1,0 +1,36 @@
+*.db
+*.faiss
+.aiexclude
+
+Backup/
+NoUse/
+frontend.worktrees/
+
+# Python virtual environment
+venv/
+.env
+*.pyc
+__pycache__/
+GEMINI.md
+frontend-design-spec.md
+
+# Local project data / caches
+database/images/
+database/import_queue/
+database/duplicates/
+database/data/
+database/__pycache__/
+core/__pycache__/
+tools/__pycache__/
+
+# Frontend local artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.git/
+frontend/*.tsbuildinfo
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
