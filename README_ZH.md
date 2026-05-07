@@ -1,6 +1,6 @@
 # AnimeReply
 
-[English README](./README.md)
+[English](./README.md)
 
 AnimeReply 是一個 AI 動漫梗圖回覆系統。輸入你現在的心情、抱怨或對話內容，AI 會讀懂你的意圖，並替你挑選最適合拿來回話的動漫梗圖。
 

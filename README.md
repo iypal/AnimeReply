@@ -1,6 +1,6 @@
 # AnimeReply
 
-[中文版 README](./README_ZH.md)
+[中文](./README_ZH.md)
 
 AnimeReply is an AI-powered anime meme reply system. Enter your mood, complaint, or conversation, and the AI will understand your intent and pick the most fitting anime meme to reply with.
 
