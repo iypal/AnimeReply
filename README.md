@@ -2,28 +2,26 @@
 
 [中文版 README](./README_ZH.md)
 
-AnimeReply is a local AI-powered anime reaction image search system that turns anime screenshots, quote images, and reaction images into a searchable library.
-
-When a user enters a scenario such as “I want a shocked anime reply image for an absurd message,” the system tries to return the most suitable result.
+AnimeReply is an AI-powered anime meme reply system. Enter your mood, complaint, or conversation, and the AI will understand your intent and pick the most fitting anime meme to reply with.
 
 ## Overview
 
-- Upload anime images and analyze them with AI
+- Upload anime meme images and analyze them with AI
 - Turn images into searchable metadata
-- Search reaction images with natural language
+- Match user intent with suitable anime meme replies
 - Manage image records with SQLite
 - Build a local FAISS vector index
-- Provide both a user-facing search page and an admin panel
+- Provide both a user-facing reply page and an admin panel
 - Support batch import workflows
 
-## Workflow
+## How It Works
 
-1. Collect anime screenshots or reaction images
+1. Collect anime screenshots, quote images, and meme-style reaction images
 2. Upload them into the system
 3. Let AI generate fields such as `subtitle`, `usage_context`, and `tags`
 4. Build embeddings and a FAISS index
-5. Enter a natural-language scenario in the frontend
-6. Get the most relevant image results
+5. Enter your mood, complaint, or conversation in the frontend
+6. Get the anime meme reply that best fits the intent
 
 ## Tech Stack
 
@@ -42,23 +40,23 @@ In the future, the architecture is intended to support multiple AI providers, su
 - other OpenAI-compatible providers
 - self-hosted model services
 
-## Search Pipeline
+## Reply Pipeline
 
-The current search logic is more than plain keyword matching. At a high level, it works like this:
+The current logic is more than plain keyword matching. At a high level, it works like this:
 
-1. The user enters a natural-language scenario
+1. The user enters a mood, complaint, or conversation
 2. An LLM rewrites it into a better search intent
-3. Vector search retrieves candidate images
+3. Vector search retrieves candidate meme images
 4. Extra scoring adjusts the candidates using tags, context, and lexical penalties
 5. An LLM reranks the final candidates
 
-The goal is to return images that feel actually usable as reaction replies, not just images with overlapping words.
+The goal is to return anime memes that feel naturally usable as replies, not just images with overlapping words.
 
 ## Interface Structure
 
 ### `/bot`
 
-The main user-facing search page for entering a scenario and getting recommended images.
+The main user-facing page for entering a message and getting recommended anime meme replies.
 
 ### `/admin/images`
 
